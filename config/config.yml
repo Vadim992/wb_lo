@@ -1,0 +1,15 @@
+postgres:
+  host: "localhost"
+  port: "5555"
+  user: "postgres"
+  db_name: "postgres"
+  password: "postgres"
+  ssl_mode: "disable"
+server:
+  port: "3000"
+nats_streaming:
+  cluster_id: "test-cluster"
+  client_id: "myclient"
+  host: "localhost"
+  port: "4222"
+  wb_chan: "wbChan"
