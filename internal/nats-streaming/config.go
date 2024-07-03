@@ -2,7 +2,6 @@ package nats_streaming
 
 import (
 	"go.uber.org/config"
-	"log"
 )
 
 type Config struct {
@@ -18,7 +17,6 @@ func newConfig(provider config.Provider) (*Config, error) {
 
 	err := provider.Get("nats_streaming").Populate(&cfg)
 	if err != nil {
-		log.Println("HERE")
 		return nil, err
 	}
 

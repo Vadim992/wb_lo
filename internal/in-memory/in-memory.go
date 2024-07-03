@@ -54,8 +54,6 @@ func (c *Cache) Save(id string, order *models.Order) {
 	defer c.mu.Unlock()
 
 	c.cache[id] = order
-
-	fmt.Println(c.cache)
 }
 
 func recoverStorage(l *zap.Logger, storage StorageRepository, db postgres.DBRepository) error {
